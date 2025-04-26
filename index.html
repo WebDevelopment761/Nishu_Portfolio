@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: #0f1115;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #0f1115;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: #bbb;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover, nav a.active {
+      color: #00f0ff;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 10%;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+    .hero-text h2 {
+      font-size: 2rem;
+      color: #00f0ff;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      margin-bottom: 20px;
+      color: #aaa;
+    }
+    .social-icons a {
+      color: #aaa;
+      font-size: 1.2rem;
+      margin-right: 15px;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #00f0ff;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #00f0ff;
+      color: #000;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-img {
+      flex: 1;
+      max-width: 300px;
+    }
+    .hero-img img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #00f0ff;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-img {
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Portfolio.</div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+    <section class="hero">
+    <div class="hero-text">
+      <h3>Hello, It's Me</h3>
+      <h1>Nishita Tilokani</h1>
+      <h2>And I'm a <span style="color: #00f0ff">Full-Stack Developer</span></h2>
+      <p>"Hi, I'm a Full-Stack Developer who builds modern, responsive, and scalable 
+        web applications.
+        With expertise in both front-end technologies like HTML, CSS, JavaScript, 
+        React, and back-end tools such as Node.js, Express, and MongoDB, I create seamless 
+        digital experiences from concept to deployment.
+        Whether it's designing intuitive UIs or building robust APIs, I focus on writing 
+        clean, efficient, and maintainable code. Let's build something powerful together."</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/nishita.tilokani"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/NishitaTilokan1"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nishita_tilokani/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nishita-tilokani-306204215/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/tilokaninishita"><i class="fab fa-github"></i></a>
+      </div>
+      <a href="PIC/NISHITA TILOKANI.pdf" class="btn">Download CV</a>
+    </div>
+    <div class="hero-img">
+      <img src="PIC/pic.jpg" alt="Nishita Tilokani">
+    </div>
+  </section>
+ 
+    <!-- About Section -->
+<section id="about" style="padding: 60px 10%; background: #13161b;">
+  <h2 style="color: #00f0ff; margin-bottom: 20px;">About Me</h2>
+  <p style="color: #ccc; max-width: 800px;">
+    I'm Nishita Tilokani, a passionate 
+    Full-Stack Developer with a knack for
+    building responsive, scalable web applications. 
+    With a solid foundation in both front-end and 
+    back-end development, I aim to deliver seamless
+    digital experiences.
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" style="padding: 60px 10%;">
+  <h2 style="color: #00f0ff; margin-bottom: 20px;">Skills</h2>
+  <ul style="color: #ccc; columns: 2; max-width: 600px; list-style: none; line-height: 1.8;">
+    <li>HTML5 / CSS3</li>
+    <li>JavaScript (ES6+)</li>
+    <li>REACT.JS</li>
+    <li>NODE.JS / EXPRESS</li>
+    <li>JQUERY</li>
+    <li>GIT & GITHUB</li>
+    <li>RESPONSIVE DESIGN</li>
+    <li>REST APIs</li>
+    <li>BOOTSTRAP5</li>
+    <li>PYTHON</li>
+    <li>MySQL</li>
+    <li>MongoDB</li>
+  </ul>
+</section>
+
+<!-- Services Section -->
+<section id="services" style="padding: 60px 10%; background: #13161b;">
+  <h2 style="color: #00f0ff; margin-bottom: 20px;">My Services</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+    <div style="background: #1a1e25; padding: 20px; border-radius: 15px;">
+      <h3 style="color: #00f0ff;">Web Development</h3>
+      <p style="color: #ccc;">Custom websites with modern tech like React, Node.js, and MongoDB.</p>
+    </div>
+    <div style="background: #1a1e25; padding: 20px; border-radius: 15px;">
+      <h3 style="color: #00f0ff;">Responsive Design</h3>
+      <p style="color: #ccc;">Mobile-friendly designs that work smoothly across all devices.</p>
+    </div>
+    <div style="background: #1a1e25; padding: 20px; border-radius: 15px;">
+      <h3 style="color: #00f0ff;">UI/UX Improvement</h3>
+      <p style="color: #ccc;">Enhancing user experience through intuitive and clean interfaces.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+ <section id="contact" style="text-align: center; padding: 60px 10%;">
+  <h2 style="color:#00f0ff; margin-bottom: 30px;">Contact Me</h2>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+  <p styel="color: #ccc; font-size1.1rem; margin:0;">Email: 
+    <a href="mailto:nishitatilokani560@gmail.com" style="color: #ccc; font-size: 1.1rem; margin:0;"> nishitatilokani560@gmail.com </a>
+  </p>
+
+  <p style="color: #ccc; font-size: 1.1rem; margin:0;">Phone: 
+    <a href="tel:+918005638539">+91 8005638539</a>
+  </p>
+  <p style="color: #ccc; font-size: 1.1rem; margin: 0;">Address: Jaipur, Rajasthan, India</p>
+  </div>
+ </section>
+
+<!-- Contact Section -->
+<section id="contact" style="padding: 60px 10%;">
+  <h2 style="color: #00f0ff; margin-bottom: 20px;">Fill the contact form</h2>
+  <p style="color: #ccc; margin-bottom: 20px;">Have a project in mind or just want to say hello? Reach out!</p>
+  <form style="max-width: 500px;">
+    <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: none;">
+    <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: none;">
+    <textarea placeholder="Your Message" required rows="5" style="width: 100%; padding: 10px; border-radius: 8px; border: none;"></textarea>
+    <button type="submit" style="margin-top: 15px; background: #00f0ff; color: #000; padding: 10px 25px; border-radius: 25px; font-weight: bold; border: none;">Send Message</button>
+  </form>
+</section>
+</body>
+</html>
+
